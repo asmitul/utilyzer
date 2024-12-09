@@ -54,3 +54,20 @@ def test_str_to_number_edge_cases():
     # Test very large numbers
     assert str_to_number("999999999999999") == 999999999999999
     assert str_to_number("1e308") == 1e308
+
+
+def test_str_to_number_non_string_inputs():
+    # Test None
+    assert str_to_number(None) is None
+
+    # Test numeric inputs
+    assert str_to_number(123) == 123
+    assert str_to_number(12.34) == 12.34
+
+    # Test other types
+    assert str_to_number([1, 2, 3]) is None
+    assert str_to_number({"key": "value"}) is None
+
+    # Test boolean
+    assert str_to_number(True) == 1
+    assert str_to_number(False) == 0
