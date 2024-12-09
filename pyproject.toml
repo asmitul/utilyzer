@@ -21,7 +21,7 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = ["pytz"]
+dependencies = ["pytz", "types-pytz"]
 description = "A tool for awesome python utils"
 dynamic = ["version"]
 keywords = []
