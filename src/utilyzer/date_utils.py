@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
-import pytz
 from typing import TypedDict
+
+import pytz
 
 
 class DateRange(TypedDict):

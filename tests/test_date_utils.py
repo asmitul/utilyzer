@@ -1,12 +1,9 @@
-from datetime import datetime
-import pytz
 from utilyzer.date_utils import get_day_range
 
 
 def test_get_day_range():
     # Test current day
     result = get_day_range(0)
-    tz = pytz.timezone("Asia/Shanghai")
 
     # Basic structure tests
     assert isinstance(result, dict)
