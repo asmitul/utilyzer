@@ -23,6 +23,11 @@ pip install utilyzer
   - Whitespace handling
   - Robust error handling
 
+- Date utilities with support for:
+  - Getting day ranges with timestamps
+  - Timezone awareness
+  - Flexible day lookback
+
 ## Quick Start
 
 ```python
@@ -48,6 +53,21 @@ str_to_number("") # None
 
 # Handle None
 str_to_number(None) # None
+```
+
+## Date Utilities
+
+```python
+from utilyzer import get_day_range
+
+# Get today's range
+today = get_day_range()
+
+# Get yesterday's range
+yesterday = get_day_range(1)
+
+# Get range with different timezone
+hk_time = get_day_range(0, timezone='Asia/Hong_Kong')
 ```
 
 ## Requirements
