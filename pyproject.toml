@@ -3,7 +3,7 @@ build-backend = "hatchling.build"
 requires = ["hatchling"]
 
 [project]
-authors = [{name = "REPLACE_FULL_NAME"}]
+authors = [{name = "asmitul"}]
 classifiers = [
   "Topic :: Internet",
   "Topic :: Software Development :: Libraries :: Application Frameworks",
@@ -22,21 +22,21 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dependencies = []
-description = "REPLACE_PACKAGE_DESCRIPTION"
+description = "A tool for awesome python utils"
 dynamic = ["version"]
 keywords = []
 license = "MIT"
-name = "REPLACE_PACKAGE_NAME"
+name = "utilyzer"
 readme = "README.md"
 requires-python = ">=3.8,<3.12"
 
 [project.urls]
-Documentation = "https://REPLACE_GITHUB_USERNAME.github.io/REPLACE_REPO_NAME"
-Issues = "https://github.com/REPLACE_GITHUB_USERNAME/REPLACE_REPO_NAME/issues"
-Source = "https://github.com/REPLACE_GITHUB_USERNAME/REPLACE_REPO_NAME"
+Documentation = "https://asmitul.github.io/utilyzer"
+Issues = "https://github.com/asmitul/utilyzer/issues"
+Source = "https://github.com/asmitul/utilyzer"
 
 [tool.hatch.version]
-path = "src/REPLACE_PACKAGE_NAME/__init__.py"
+path = "src/utilyzer/__init__.py"
 
 [project.optional-dependencies]
 docs = [
@@ -97,7 +97,7 @@ select = [
 ]
 
 [tool.ruff.isort]
-known-first-party = ["REPLACE_PACKAGE_NAME"]
+known-first-party = ["utilyzer"]
 
 [tool.hatch.envs.tests]
 features = [
@@ -105,7 +105,7 @@ features = [
 ]
 
 [tool.hatch.envs.tests.scripts]
-run = "pytest --cov=REPLACE_PACKAGE_NAME --cov-report=term-missing tests/ --durations 0 -s {args:tests}"
+run = "pytest --cov=utilyzer --cov-report=term-missing tests/ --durations 0 -s {args:tests}"
 
 [[tool.hatch.envs.tests.matrix]]
 python = ["38", "39", "310", "311"]

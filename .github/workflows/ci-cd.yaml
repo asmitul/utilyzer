@@ -66,7 +66,7 @@ jobs:
           pip install ".[tests]"
 
       - name: run-tests
-        run: pytest --cov=REPLACE_PACKAGE_NAME --cov-report=term-missing tests/ -s --durations 0
+        run: pytest --cov=utilyzer --cov-report=term-missing tests/ -s --durations 0
 
   deploy-docs:
     needs: run-tests

@@ -1,47 +1,68 @@
-# 🎈 Python Package Template
+# utilyzer
 
-A modern Python package template with comprehensive tooling and CI/CD setup.
+A tool for awesome python utils
 
-## ✨ Features
+[![PyPI version](https://badge.fury.io/py/utilyzer.svg)](https://badge.fury.io/py/utilyzer)
+[![ci-cd](https://github.com/asmitul/utilyzer/actions/workflows/ci-cd.yaml/badge.svg)](https://github.com/asmitul/utilyzer/actions/workflows/ci-cd.yaml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-- 📦 Package configuration with `pyproject.toml` built with `hatch`
-- 🎨 Code formatting and linting with `ruff` and `black`
-- 🐳 Ready-to-use `Dockerfile` with package installation
-- 🔄 Git hooks with `pre-commit` configuration
-- 💻 GitHub Codespaces support via `.devcontainer`
-- 🚀 CI/CD Pipelines with GitHub Actions
-- 🧪 Basic `pytest` setup for unit tests
-- 📚 Auto-generated docs with `mkdocs` and `mkdocs-material`
+## Installation
 
-## 🚀 Getting Started
+```bash
+pip install utilyzer
+```
 
-### 1. Required Replacements
+## Features
 
-Replace the following placeholders in the codebase:
+- String to Number conversion with support for:
+  - Integer conversion
+  - Float conversion
+  - Scientific notation
+  - Whitespace handling
+  - Robust error handling
 
-| Placeholder | Description | Example |
-|------------|-------------|----------|
-| `REPLACE_PACKAGE_NAME` | Package name (usually repository name) | `awesome_project` |
-| `REPLACE_REPO_NAME` | GitHub repository name | `awesome-project` |
-| `REPLACE_PACKAGE_DESCRIPTION` | Brief package description | `A tool for awesome things` |
-| `REPLACE_FULL_NAME` | Your full name | `John Doe` |
-| `REPLACE_EMAIL` | Your email address | `john@example.com` |
-| `REPLACE_GITHUB_USERNAME` | Your GitHub username | `johndoe` |
+## Quick Start
 
-### 2. GitHub Configuration
+```python
+from utilyzer import str_to_number
 
-#### 2.1 PyPI Token Setup
+# Convert string to integer
+str_to_number("123") # 123  
 
-Add your `PYPI_TOKEN` to repository secrets for package publishing.
+# Convert string to float
+str_to_number("12.34") # 12.34
 
-#### 2.2 GitHub Actions Permissions
+# Convert string to scientific notation
+str_to_number("1e-10") # 1e-10
 
-Enable write permissions for GITHUB_TOKEN:
+# Handle whitespace
+str_to_number("  123  ") # 123
 
-1. Navigate to `Settings` > `Actions` > `General` in your repository
-2. Under `Workflow permissions`, select `Read and write permissions`
-3. Click `Save` to apply changes
+# Handle invalid input
+str_to_number("abc") # None
 
-## 📝 License
+# Handle empty string
+str_to_number("") # None
+
+# Handle None
+str_to_number(None) # None
+```
+
+## Requirements
+
+- Python >= 3.8
+- Python < 3.12
+
+
+## Documentation
+
+Full documentation is available at [https://asmitul.github.io/utilyzer](https://asmitul.github.io/utilyzer)
+
+
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+- **asmitul** - [GitHub](https://github.com/asmitul)

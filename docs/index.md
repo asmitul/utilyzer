@@ -1,3 +1,3 @@
-# REPLACE_PACKAGE_NAME
+# utilyzer
 
-REPLACE_PACKAGE_DESCRIPTION
+A tool for awesome python utils
