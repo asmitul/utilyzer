@@ -7,7 +7,6 @@ def test_get_day_range():
     # Test current day
     result = get_day_range(0)
     tz = pytz.timezone("Asia/Shanghai")
-    now = datetime.now(tz)
 
     # Basic structure tests
     assert isinstance(result, dict)
