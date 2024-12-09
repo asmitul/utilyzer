@@ -5,6 +5,8 @@ A tool for awesome python utils
 [![PyPI version](https://badge.fury.io/py/utilyzer.svg)](https://badge.fury.io/py/utilyzer)
 [![ci-cd](https://github.com/asmitul/utilyzer/actions/workflows/ci-cd.yaml/badge.svg)](https://github.com/asmitul/utilyzer/actions/workflows/ci-cd.yaml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python Versions](https://img.shields.io/pypi/pyversions/utilyzer)](https://pypi.org/project/utilyzer)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/utilyzer)](https://pypi.org/project/utilyzer)
 
 ## Installation
 
