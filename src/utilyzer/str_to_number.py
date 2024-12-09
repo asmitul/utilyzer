@@ -1,4 +1,5 @@
 """Convert string values to numbers."""
+
 from typing import Optional, Union
 
 

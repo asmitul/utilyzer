@@ -75,6 +75,15 @@ hk_time = get_day_range(0, timezone='Asia/Hong_Kong')
 - Python >= 3.8
 - Python < 3.12
 
+## Development on local
+
+```bash
+# First review the changes
+black --check --diff --preview src tests
+
+# Then apply them if you're happy with the proposed changes
+black --preview src tests
+```
 
 ## Documentation
 
